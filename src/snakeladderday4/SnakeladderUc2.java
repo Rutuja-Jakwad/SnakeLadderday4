@@ -1,18 +1,17 @@
 package snakeladderday4;
 
 
-	import java.util.Random;
-
 	public class SnakeladderUc2 {
 		public static void main(String[] args) {
-			Random dice = new Random();
-			int number;
+			System.out.println("Welcome to snake and ladder game.");
 			
-			for(int counter=1; counter<=10; counter++) {
-				number = 1+dice.nextInt(6);
-				System.out.println(number + " ");
+			int startPosition = 0;
+			System.out.println("The player position is: " +startPosition);
+			double diceNo = Math.floor(((Math.random() * 10) % 6)+1);
+			System.out.println("The Dice number is = " + diceNo);
+			
 			}
 			
 		}
 
-}
+
